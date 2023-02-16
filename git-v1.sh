@@ -71,7 +71,7 @@ for name in "${directories[@]}"; do
 	rm /tmp/input/git*
 	rm /tmp/input/LICENSE
 	rm /tmp/input/README.md
-	rm /tmp/input/setup-our-git-credentials.sh
+	rm /tmp/input/setup-git-v5.sh
 
 	cp -r /tmp/input/* root
 
