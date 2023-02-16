@@ -1,6 +1,17 @@
 #!/bin/bash
 #set -e
 ##################################################################################################################
+# Author    : Erik Dubois
+# Website   : https://www.erikdubois.be
+# Website   : https://www.alci.online
+# Website   : https://www.ariser.eu
+# Website   : https://www.arcolinux.info
+# Website   : https://www.arcolinux.com
+# Website   : https://www.arcolinuxd.com
+# Website   : https://www.arcolinuxb.com
+# Website   : https://www.arcolinuxiso.com
+# Website   : https://www.arcolinuxforum.com
+##################################################################################################################
 #
 #   DO NOT JUST RUN THIS. EXAMINE AND JUDGE. RUN AT YOUR OWN RISK.
 #
@@ -22,6 +33,12 @@
 # checking if I have the latest files from github
 echo "Checking for newer files online first"
 git pull
+
+workdir=$(pwd)
+
+echo "Get the original samba file from samba github"
+wget https://raw.githubusercontent.com/alacritty/alacritty/master/alacritty.yml -O $workdir/etc/skel/.config/alacritty/default-github.yml
+
 
 # Below command will backup everything inside the project folder
 git add --all .
