@@ -4,12 +4,12 @@
 # Author 	: Erik Dubois
 # Website   : https://www.erikdubois.be
 # Website   : https://www.alci.online
-# Website	: https://www.arcolinux.info
-# Website	: https://www.arcolinux.com
-# Website	: https://www.arcolinuxd.com
-# Website	: https://www.arcolinuxb.com
-# Website	: https://www.arcolinuxiso.com
-# Website	: https://www.arcolinuxforum.com
+# Website	: https://www.artolinux.info
+# Website	: https://www.artolinux.com
+# Website	: https://www.artolinuxd.com
+# Website	: https://www.artolinuxb.com
+# Website	: https://www.artolinuxiso.com
+# Website	: https://www.artolinuxforum.com
 ##################################################################################################################
 #
 #   DO NOT JUST RUN THIS. EXAMINE AND JUDGE. RUN AT YOUR OWN RISK.
@@ -38,26 +38,26 @@ mkdir root
 rm -rf /tmp/input
 
 directories=(
-arcolinux-alacritty
-arcolinux-bin
-arcolinux-config-all-desktops
-arcolinux-fish
-arcolinux-fonts
-arcolinux-gtk3-arcolinux-candy-beauty
-arcolinux-kvantum
-arcolinux-local-applications-all-hide
-arcolinux-local-applications
-arcolinux-neofetch
-arcolinux-nitrogen
-arcolinux-paru
-arcolinux-qt5
-arcolinux-rofi
-arcolinux-rofi-themes
-arcolinux-root
-arcolinux-variety
-arcolinux-variety-autostart
-arcolinux-volumeicon
-arcolinux-zsh)
+artolinux-alacritty
+artolinux-bin
+artolinux-config-all-desktops
+artolinux-fish
+artolinux-fonts
+artolinux-gtk3-arcolinux-candy-beauty
+artolinux-kvantum
+artolinux-local-applications-all-hide
+artolinux-local-applications
+artolinux-neofetch
+artolinux-nitrogen
+artolinux-paru
+artolinux-qt5
+artolinux-rofi
+artolinux-rofi-themes
+artolinux-root
+artolinux-variety
+artolinux-variety-autostart
+artolinux-volumeicon
+artolinux-zsh)
 
 count=0
 
@@ -65,7 +65,7 @@ for name in "${directories[@]}"; do
 	count=$[count+1]
 	tput setaf 1;echo "$count ": Github " $name ";tput sgr0;
 	
-	git clone https://github.com/arcolinux/$name --depth=1  /tmp/input
+	git clone https://github.com/Dev8904/$name --depth=1  /tmp/input
 
 	rm -rf /tmp/input/.git
 	rm /tmp/input/git*
